@@ -23,9 +23,9 @@ export function Banner({ documentId }: BannerProps) {
     const promise = remove({ id: documentId });
 
     toast.promise(promise, {
-      loading: "Deleting note...",
-      success: "Note deleted!",
-      error: "Failed to delete note.",
+      loading: "Удаление заметки...",
+      success: "Заметка удалена!",
+      error: "Заметка удалена!",
     });
 
     router.push("/documents");
@@ -35,15 +35,15 @@ export function Banner({ documentId }: BannerProps) {
     const promise = restore({ id: documentId });
 
     toast.promise(promise, {
-      loading: "Restoring note...",
-      success: "Note restored!",
-      error: "Failed to restore note.",
+      loading: "Восстановление заметки...",
+      success: "Заметка восстановлена!",
+      error: "Заметка восстановлена!",
     });
   };
 
   return (
     <div className="w-full bg-rose-500 text-center text-sm p-2 text-white flex gap-x-2 justify-center items-center">
-      <p>This page is in the Trash.</p>
+      <p>Эта страница в корзине.</p>
       <Button
         className="border-white bg-transparent hover:bg-primary/5 text-white hover:text-white p-1 px-2
       h-auto font-normal"
@@ -51,7 +51,7 @@ export function Banner({ documentId }: BannerProps) {
         size="sm"
         onClick={onRestore}
       >
-        Restore page
+        Восстановить
       </Button>
       <ConfirmModal onConfirm={onRemove}>
         <Button
@@ -60,7 +60,7 @@ export function Banner({ documentId }: BannerProps) {
           variant="outline"
           size="sm"
         >
-          Delete forever
+          Удалить навсегда
         </Button>
       </ConfirmModal>
     </div>

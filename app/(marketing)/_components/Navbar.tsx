@@ -28,18 +28,18 @@ export function Navbar() {
           <>
             <SignInButton mode="modal">
               <Button variant="ghost" size="sm">
-                Login
+                Войти
               </Button>
             </SignInButton>
             <SignInButton mode="modal">
-              <Button size="sm">Get BLG free</Button>
+              <Button size="sm">Начать</Button>
             </SignInButton>
           </>
         )}
         {isAuthenticated && !isLoading && (
           <>
             <Button variant="ghost" size="sm" asChild>
-              <Link href="/documents">Enter BLG</Link>
+              <Link href="/documents">К документам</Link>
             </Button>
             <UserButton afterSignOutUrl="/" />
           </>

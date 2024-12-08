@@ -37,9 +37,9 @@ export function TrashBox() {
     const promise = restore({ id: documentId });
 
     toast.promise(promise, {
-      loading: "Restoring note...",
-      success: "Note restored!",
-      error: "Failed to restore note",
+      loading: "Восстановление заметки...",
+      success: "Заметка восстановлена!",
+      error: "Заметка восстановлена!",
     });
   };
 
@@ -47,9 +47,9 @@ export function TrashBox() {
     const promise = remove({ id: documentId });
 
     toast.promise(promise, {
-      loading: "Deleting note...",
-      success: "Note deleted!",
-      error: "Failed to delete note",
+      loading: "Удаление заметки...",
+      success: "Заметка удалена!",
+      error: "Заметка удалена!",
     });
     if (params.documentId === documentId) {
       router.push("/documents");
@@ -72,7 +72,7 @@ export function TrashBox() {
           className="h-7 px-2 focus-visible:ring-transparent bg-secondary"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Filter by page title..."
+          placeholder="Название страницы..."
         />
       </div>
       <div className="mt-2 px-1 pb-1">

@@ -99,7 +99,7 @@ export function Toolbar({ initialData, preview }: ToolbarProps) {
               size="sm"
             >
               <Smile className="w-4 h-4 mr-2" />
-              Add icon
+              Иконка
             </Button>
           </IconPicker>
         )}
@@ -111,7 +111,7 @@ export function Toolbar({ initialData, preview }: ToolbarProps) {
             onClick={coverImage.onOpen}
           >
             <ImageIcon className="w-4 h-4 mr-2" />
-            Add cover
+            Обложка
           </Button>
         )}
       </div>

@@ -128,9 +128,9 @@ export function Navigation() {
     );
 
     toast.promise(promise, {
-      loading: "Creating new note...",
-      success: "New note created!",
-      error: "Failed to create note.",
+      loading: "Создание новой заметки...",
+      success: "Новая заметка создана",
+      error: "Новая заметка создана",
     });
   };
 

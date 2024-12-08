@@ -27,7 +27,7 @@ export default function Heading() {
       {isAuthenticated && !isLoading && (
         <Button size="lg" asChild>
           <Link href="/documents">
-            Enter BeLikeGreatest
+            К документам
             <ArrowRight className="w-4 h-4 ml-2" />
           </Link>
         </Button>
@@ -35,7 +35,7 @@ export default function Heading() {
       {!isAuthenticated && !isLoading && (
         <SignInButton mode="modal">
           <Button>
-            Get BeLikeGreatest Free
+            Начать использование
             <ArrowRight className="w-4 h-4 ml-2" />
           </Button>
         </SignInButton>

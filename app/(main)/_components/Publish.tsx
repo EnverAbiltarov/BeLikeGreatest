@@ -84,7 +84,7 @@ export function Publish({ initialData }: PublishProps) {
             <div className="flex gap-x-2 items-center">
               <Globe className="text-sky-500 animate-pulse w-4 h-4" />
               <p className="text-xs font-medium text-sky-500">
-                This note live on web
+                Эта страница опубликована
               </p>
             </div>
             <div className="flex items-center">
@@ -111,15 +111,15 @@ export function Publish({ initialData }: PublishProps) {
               disabled={isSubmitting}
               onClick={onUnPublish}
             >
-              Unpublish
+              Отменить
             </Button>
           </div>
         ) : (
           <div className="flex flex-col justify-center items-center">
             <Globe className="w-8 h-8 text-muted-foreground mb-2" />
-            <p className="text-sm font-medium mb-2">Publish this note</p>
+            <p className="text-sm font-medium mb-2">Опубликуйте страницу</p>
             <span className="text-xs text-muted-foreground mb-4">
-              Share your work with others.
+              Поделитесь страницей с другими.
             </span>
             <Button
               className="w-full text-xs"

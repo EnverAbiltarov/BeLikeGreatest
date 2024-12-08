@@ -62,7 +62,7 @@ export function UserItem() {
           className="w-full cursor-pointer text-muted-foreground"
           asChild
         >
-          <SignOutButton>Log out</SignOutButton>
+          <SignOutButton>Выйти</SignOutButton>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

@@ -14,7 +14,7 @@ const buttonVariants = cva(
         destructive:
           "bg-rose-400 text-primary-foreground hover:bg-rose-500 border-b-[5px] border-rose-600 rounded-xl active:border-b-0",
         outline:
-          "bg-white-400 text-neutral-900 hover:bg-gray-100 border-[1px] border-neutral-500 border-b-[5px] rounded-xl active:border-0",
+          "bg-white-400 text-neutral-900 hover:bg-gray-100 border-[1px] border-neutral-500 border-b-[5px] rounded-xl active:border-0 dark: bg-secondary-400 dark: text-secondary-900 dark:hover:bg-gray-900 dark:hover:text-secondary-100",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80 rounded-xl",
         ghost: "hover:bg-accent hover:text-accent-foreground rounded-xl",

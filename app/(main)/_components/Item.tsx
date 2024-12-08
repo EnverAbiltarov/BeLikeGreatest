@@ -61,9 +61,9 @@ export function Item({
     const promise = archive({ id }).then(() => router.push("/documents"));
 
     toast.promise(promise, {
-      loading: "Moving to Trash...",
-      success: "Note moved to Trash!",
-      error: "Failed to archive note",
+      loading: "Перенос в корзину...",
+      success: "Заметка перемещена в корзину!",
+      error: "Заметка перемещена в корзину!",
     });
   };
 
@@ -85,9 +85,9 @@ export function Item({
     );
 
     toast.promise(promise, {
-      loading: "Creating a new note...",
-      success: "New note created!",
-      error: "Failed to create a new note",
+      loading: "Создание новой заметки...",
+      success: "Новая заметка создана",
+      error: "Новая заметка создана",
     });
   };
 
@@ -148,7 +148,7 @@ export function Item({
             >
               <DropdownMenuItem onClick={onArchive}>
                 <Trash className="w-4 h-4 mr-2" />
-                Delete
+                Удалить
               </DropdownMenuItem>
               <DropdownMenuSeparator />
             </DropdownMenuContent>

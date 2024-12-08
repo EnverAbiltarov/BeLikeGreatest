@@ -18,8 +18,8 @@ export default function DocumentsPage() {
 
     toast.promise(promise, {
       loading: "Creating a new note...",
-      success: "New note created",
-      error: "Failed to create a new note",
+      success: "Новая заметка создана!",
+      error: "Новая заметка создана!",
     });
   };
 
@@ -40,11 +40,11 @@ export default function DocumentsPage() {
         height="300"
       />
       <h2 className="text-lg font-medium">
-        Добр {user?.firstName}&apos;s `BeLikeGreatest`
+        Добро пожаловать в {user?.firstName}&apos;s `BeLikeGreatest`
       </h2>
       <Button onClick={onCreate}>
         <PlusCircle className="w-4 h-4 mr-2" />
-        Create note
+        Создать страницу
       </Button>
     </div>
   );
