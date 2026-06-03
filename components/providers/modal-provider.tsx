@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 
 import { SettingsModal } from "@/components/modals/settings-modal"
 import { CoverImageModal } from "@/components/modals/cover-image-modal"
+import { AIModal } from "@/components/modals/ai-modal"
 
 export function ModalProvider () {
 
@@ -21,6 +22,7 @@ export function ModalProvider () {
     <>
       <SettingsModal/>
       <CoverImageModal/>
+      <AIModal/>
     </>
 )
 }

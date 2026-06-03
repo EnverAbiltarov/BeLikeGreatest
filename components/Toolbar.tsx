@@ -1,11 +1,12 @@
 "use client";
 
 import React, { ElementRef, useRef, useState } from "react";
-import { ImageIcon, Smile, X } from "lucide-react";
+import { ImageIcon, Smile, X, Sparkles } from "lucide-react";
 import { useMutation } from "convex/react";
 import TextAreaAutoSize from "react-textarea-autosize";
 
 import { useConverImage } from "@/hooks/use-cover-image";
+import { useAI } from "@/hooks/use-ai";
 import { Doc } from "@/convex/_generated/dataModel";
 import { Button } from "@/components/ui/button";
 import { api } from "@/convex/_generated/api";
@@ -26,6 +27,7 @@ export function Toolbar({ initialData, preview }: ToolbarProps) {
   const removeIcon = useMutation(api.documents.removeIcon);
 
   const coverImage = useConverImage();
+  const ai = useAI();
 
   const enableInput = () => {
     if (preview) return;
@@ -112,6 +114,17 @@ export function Toolbar({ initialData, preview }: ToolbarProps) {
           >
             <ImageIcon className="w-4 h-4 mr-2" />
             Обложка
+          </Button>
+        )}
+        {!preview && (
+          <Button
+            className="text-muted-foreground text-xs"
+            variant="outline"
+            size="sm"
+            onClick={ai.onOpen}
+          >
+            <Sparkles className="w-4 h-4 mr-2" />
+            AI Помощник
           </Button>
         )}
       </div>
